@@ -65,7 +65,8 @@ public class CodeIntegrationTestCase {
            browserName=firefox,platform=LINUX \ 
            >/dev/null &
          */
-        driver = new RemoteWebDriver(new URL(SELENIUM_HUB_URL), cap);
+        //driver = new RemoteWebDriver(new URL(SELENIUM_HUB_URL), cap);
+        driver = new FirefoxDriver(cap);
         driver.navigate().to(TARGET_SERVER_URL);
     }
 
